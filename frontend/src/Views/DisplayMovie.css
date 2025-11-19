@@ -1,0 +1,120 @@
+/* Body background */
+body {
+  background: #0f0f1a;
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+}
+
+/* Container */
+.container {
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 30px 25px;
+  background: linear-gradient(145deg, #1a1a2e, #162447);
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.7);
+  animation: fadeInUp 0.8s ease-out;
+}
+
+/* Slide in animation */
+@keyframes fadeInUp {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+/* Title */
+h3 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 2rem;
+  color: #ff416c;
+  text-shadow: 0 0 10px #ff416c, 0 0 20px #ff4b2b;
+}
+
+/* Table styles */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #2c2c3e;
+  color: #fff;
+  font-size: 1rem;
+}
+
+thead {
+  background: linear-gradient(135deg, #ff416c, #ff4b2b);
+  color: #fff;
+}
+
+th, td {
+  padding: 12px 15px;
+  text-align: left;
+}
+
+tbody tr {
+  border-bottom: 1px solid #444;
+  transition: transform 0.3s, background 0.3s;
+}
+
+tbody tr:hover {
+  transform: scale(1.02);
+  background: #3b3b55;
+}
+
+/* Alerts */
+.alert {
+  text-align: center;
+  padding: 10px 0;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  font-weight: 600;
+  animation: slideFade 0.5s;
+}
+
+.alert-success {
+  background-color: #4caf50;
+  color: #fff;
+}
+
+.alert-danger {
+  background-color: #f44336;
+  color: #fff;
+}
+
+@keyframes slideFade {
+  0% { opacity: 0; transform: translateY(-10px);}
+  100% { opacity: 1; transform: translateY(0);}
+}
+
+/* Paragraph for no movies */
+p {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #ccc;
+  margin-top: 20px;
+}
+.actions {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon {
+  cursor: pointer;
+  font-size: 1.2rem;
+  transition: transform 0.3s, color 0.3s;
+}
+
+.icon.edit {
+  color: #4caf50;
+}
+
+.icon.delete {
+  color: #f44336;
+}
+
+.icon:hover {
+  transform: scale(1.2);
+}
